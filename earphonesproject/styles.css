@@ -37,12 +37,36 @@ header {
 
 .hero .text-content {
     text-align: left;
-    max-width: 400px;
+    max-width: 600px;
+    text-align: start;
+ 
 }
 
-.hero h1 {
+.hero h2 {
+    font-size: 20px;
+    text-align: start;
+   
+}
+.hero h3 {
     font-size: 30px;
     color: #ffffff;
+    text-align: start;
+}
+.hero p,span{
+    font-size: 20px;
+    text-align: start;
+}
+.hero button{
+    height: 40px;
+    width: 90px;
+    background-color: #ff0000;
+    color: #ffffff;
+   float: left;
+}
+.hero-image{
+    height: 500px;
+    width: 500px;
+   display: flex;
 }
 
 .price {
@@ -66,27 +90,14 @@ header {
 }
 
 /* Slider Indicators */
-.slider-indicators {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
 
-.slider-indicators span {
-    width: 10px;
-    height: 10px;
-    background: gray;
-    border-radius: 50%;
-    margin: 0 5px;
-}
+   
 
-.slider-indicators .active {
-    background: red;
-}
 
 /* Featured Products */
-.products {
+/* .products { 
     margin-top: 50px;
+   
 }
 
 .products h2 {
@@ -96,10 +107,15 @@ header {
 
 .product-container {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 20px;
+    display: flex;
+}
+.products .Product-slider .product {
+    display: flex;
+    
 }
 
 .product {
@@ -121,12 +137,42 @@ header {
 .product .price {
     color: #ff0000;
     font-weight: bold;
-}
+}*/
 h2 {
     color: #ffffff;
     font-size: 24px;
     margin-top: 20px;
 }
+
+
+.products .product-list .product-card {
+    
+    gap: 20px;
+    padding: 5px;
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    flex-wrap: wrap;
+    
+}
+.products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+ .products .product-list .product-card img {
+   width: 100px;
+   height:100px;
+
+}
+
+ .products .product-list .product-card .price{
+  font-size: 10px;
+  color: red;
+ }
+ .products .product-list .product-card .old-price{
+  font-size: 10px;
+ }
 
 /* Filter Buttons */
 .filter-buttons {
